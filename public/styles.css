@@ -98,8 +98,10 @@ p { color: var(--muted); }
 .section-head h2 { max-width: 700px; margin-bottom: 20px; }
 .section-head p:not(.eyebrow) { max-width: 640px; font-size: 1.05rem; }
 .services-section { background: var(--cream); }
-.service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
-.service-card { min-height: 264px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; background: #fff; border: 1px solid #e0e5df; text-decoration: none; transition: background .2s, transform .2s, border-color .2s; }
+.service-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 15px; }
+.service-card { grid-column: span 2; min-height: 238px; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; background: #fff; border: 1px solid #e0e5df; text-decoration: none; transition: background .2s, transform .2s, border-color .2s; }
+.service-card:nth-child(4):nth-last-child(2) { grid-column: 2 / span 2; }
+.service-card:nth-child(5):last-child { grid-column: 4 / span 2; }
 .service-card:hover { background: #e5efeb; transform: translateY(-4px); border-color: #aac8c5; }
 .card-number { color: var(--sea); font-family: var(--serif); font-size: 1.5rem; }
 .service-card-bottom { display: flex; justify-content: space-between; align-items: end; gap: 10px; }
@@ -222,7 +224,9 @@ p { color: var(--muted); }
   .intro-section, .plan-feature-inner, .editorial-split, .detail-layout, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .section-head { grid-template-columns: 1fr; gap: 0; }
   .section-head .eyebrow { margin-bottom: 18px; }
-  .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .service-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .service-card, .service-card:nth-child(4):nth-last-child(2) { grid-column: span 2; }
+  .service-card:nth-child(5):last-child { grid-column: 2 / span 2; }
   .profile-hero { gap: 45px; }
   .footer-grid { grid-template-columns: 1.2fr 1fr; gap: 45px; }
   .handoff-panel { display: block; }
@@ -249,7 +253,7 @@ p { color: var(--muted); }
   .intro-section { gap: 45px; }
   .image-tag { left: 0; bottom: 0; }
   .service-grid, .doctor-grid, .steps, .plan-grid, .coverage-grid { grid-template-columns: 1fr; }
-  .service-card { min-height: 205px; padding: 24px; }
+  .service-card, .service-card:nth-child(4):nth-last-child(2), .service-card:nth-child(5):last-child { grid-column: auto; min-height: 205px; padding: 24px; }
   .doctor-card { display: grid; grid-template-columns: .8fr 1fr; min-height: 245px; }
   .doctor-card img { height: 100%; min-height: 245px; }
   .doctor-card > div { padding: 19px; }
