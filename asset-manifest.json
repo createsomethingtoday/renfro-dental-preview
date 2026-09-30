@@ -1,0 +1,32 @@
+[
+  {
+    "local": "public/assets/renfro-logo-color.svg",
+    "source": "https://www.renfrodental.com/wp-content/uploads/sites/14/2024/01/burleson-tx-logo-color.svg",
+    "bytes": 12265
+  },
+  {
+    "local": "public/assets/renfro-logo-white.svg",
+    "source": "https://www.renfrodental.com/wp-content/uploads/sites/14/2024/01/burleson-tx-logo-white.svg",
+    "bytes": 3524
+  },
+  {
+    "local": "public/assets/family-hero.jpg",
+    "source": "https://www.renfrodental.com/wp-content/uploads/sites/14/2024/04/dentist-in-burleson-tx-desktop.jpg",
+    "bytes": 105267
+  },
+  {
+    "local": "public/assets/office.jpg",
+    "source": "https://www.renfrodental.com/wp-content/uploads/sites/14/2024/04/burleson-tx-dental-office.jpg",
+    "bytes": 35053
+  },
+  {
+    "local": "public/assets/dr-jarrett-stone.jpg",
+    "source": "https://www.renfrodental.com/wp-content/uploads/sites/14/2024/07/dr-jarrett-stone-burleson-tx-1.jpg",
+    "bytes": 24028
+  },
+  {
+    "local": "public/assets/dr-ryker-ferraro.jpg",
+    "source": "https://www.renfrodental.com/wp-content/uploads/sites/14/2024/07/dr-ryker-ferraro-burleson-tx-1.jpg",
+    "bytes": 23862
+  }
+]
