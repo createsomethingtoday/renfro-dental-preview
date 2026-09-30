@@ -121,6 +121,63 @@ p { color: var(--muted); }
 .feature-links { border-top: 1px solid #92ada9; }
 .feature-links a { display: flex; justify-content: space-between; gap: 20px; padding: 26px 2px; border-bottom: 1px solid #92ada9; color: var(--ink); font-family: var(--serif); font-size: 1.45rem; text-decoration: none; }
 .feature-links a:hover { color: #41787d; }
+.reviews-section { background: #e7efeb; }
+.reviews-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 38px; }
+.reviews-heading h2 { margin-bottom: 15px; }
+.reviews-heading p { max-width: 640px; margin-bottom: 0; }
+.review-controls { display: flex; gap: 9px; flex: 0 0 auto; }
+.review-controls button { width: 48px; height: 48px; border: 1px solid var(--ink); border-radius: 50%; background: transparent; color: var(--ink); cursor: pointer; font-size: 1.3rem; }
+.review-controls button:hover { background: var(--ink); color: #fff; }
+.review-track { display: grid; grid-auto-columns: minmax(330px, calc((100% - 40px)/3)); grid-auto-flow: column; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; padding-bottom: 15px; }
+.review-card { min-height: 360px; margin: 0; padding: 30px; display: flex; flex-direction: column; background: #fff; scroll-snap-align: start; }
+.review-stars { color: #b47250; font-size: 1.2rem; letter-spacing: .12em; }
+.review-card blockquote { flex: 1; margin: 35px 0 30px; color: var(--ink); font-family: var(--serif); font-size: 1.36rem; line-height: 1.38; }
+.review-card figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 15px; border-top: 1px solid var(--line); padding-top: 16px; font-size: .76rem; }
+.review-card figcaption span { color: var(--muted); white-space: nowrap; }
+.source-note { color: var(--muted); font-size: .78rem !important; }
+.reviews-section > .shell > .source-note { margin: 15px 0 0; }
+.insurance-section { background: var(--paper); }
+.insurance-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 20px; align-items: stretch; }
+.insurance-card, .wellness-card { min-width: 0; display: flex; flex-direction: column; }
+.insurance-card { background: #e9eeec; }
+.wellness-card { background: var(--ink); color: #fff; }
+.insurance-card-head { min-height: 165px; padding: 30px 35px; border-bottom: 1px solid #bed0c9; }
+.wellness-card .insurance-card-head { border-color: #45686a; }
+.insurance-card-head span { color: var(--copper); font-size: .7rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+.wellness-card .insurance-card-head span { color: #dbb197; }
+.insurance-card-head h3 { max-width: 500px; margin: 12px 0 0; font-family: var(--serif); font-size: clamp(1.8rem, 2.7vw, 2.75rem); font-weight: 400; }
+.insurance-card-body { flex: 1; padding: 30px 35px 38px; display: flex; flex-direction: column; align-items: start; }
+.insurance-card-body > p:first-child { max-width: 540px; }
+.wellness-card p { color: #e0ece7; }
+.carrier-grid { width: 100%; margin: 7px 0 23px; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 9px; list-style: none; }
+.carrier-grid li { padding: 15px 18px; background: #fff; color: var(--ink); font-family: var(--serif); font-size: clamp(1.1rem, 1.6vw, 1.45rem); text-align: center; line-height: 1.2; }
+.insurance-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin-top: auto; padding-top: 23px; }
+.benefit-list { margin: 5px 0 20px; padding: 0; list-style: none; }
+.benefit-list li { position: relative; padding: 7px 0 7px 32px; color: #fff; }
+.benefit-list li::before { content: '✓'; position: absolute; left: 0; color: #beddd2; font-weight: 800; }
+.wellness-card .button { margin-top: auto; }
+.questions-section { display: grid; grid-template-columns: .95fr 1fr; align-items: center; gap: clamp(55px, 8vw, 130px); }
+.questions-photo img { width: 100%; aspect-ratio: 1.2; object-fit: cover; }
+.questions-copy h2 { max-width: 570px; }
+.questions-copy > p:not(.eyebrow) { max-width: 540px; margin-bottom: 29px; font-size: 1.06rem; }
+.education-section { background: var(--cream); }
+.education-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.education-card { min-width: 0; background: #fff; }
+.education-card a { display: block; height: 100%; text-decoration: none; }
+.education-image { position: relative; display: block; aspect-ratio: 750/422; overflow: hidden; background: #d3dfdc; }
+.education-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.education-card a:hover .education-image img { transform: scale(1.04); }
+.play-icon { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); display: grid; place-items: center; width: 60px; height: 60px; padding-left: 4px; border-radius: 50%; background: #fff; color: var(--ink); box-shadow: 0 8px 30px #0a323655; font-size: 1rem; }
+.education-card-copy { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 23px 25px 27px; }
+.education-card-copy small { grid-column: 1 / -1; color: var(--copper); font-size: .67rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.education-card-copy strong { max-width: 280px; font-family: var(--serif); font-size: 1.42rem; font-weight: 400; line-height: 1.25; }
+.education-card-copy > span { font-size: 1.25rem; }
+.video-dialog { width: min(900px, calc(100vw - 32px)); max-width: none; max-height: calc(100vh - 32px); padding: 20px; border: 0; background: var(--paper); color: var(--ink); }
+.video-dialog::backdrop { background: #0d2d32de; }
+.video-close { display: block; margin-left: auto; padding: 0 9px; border: 0; background: transparent; color: var(--ink); cursor: pointer; font-size: 2rem; line-height: 1; }
+.video-frame { aspect-ratio: 16/9; background: var(--ink); }
+.video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+.video-title { margin: 15px 0 0; color: var(--ink); font-weight: 700; }
 .action-strip { padding-block: 74px; background: var(--ink); color: #fff; }
 .action-inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
 .action-inner h2 { margin-bottom: 8px; }
@@ -228,6 +285,8 @@ p { color: var(--muted); }
   .service-card, .service-card:nth-child(4):nth-last-child(2) { grid-column: span 2; }
   .service-card:nth-child(5):last-child { grid-column: 2 / span 2; }
   .profile-hero { gap: 45px; }
+  .insurance-grid, .questions-section { grid-template-columns: 1fr; }
+  .review-track { grid-auto-columns: minmax(300px, calc((100% - 20px)/2)); }
   .footer-grid { grid-template-columns: 1.2fr 1fr; gap: 45px; }
   .handoff-panel { display: block; }
   .handoff-panel .button { margin-top: 22px; }
@@ -253,6 +312,14 @@ p { color: var(--muted); }
   .intro-section { gap: 45px; }
   .image-tag { left: 0; bottom: 0; }
   .service-grid, .doctor-grid, .steps, .plan-grid, .coverage-grid { grid-template-columns: 1fr; }
+  .reviews-heading { align-items: start; flex-direction: column; }
+  .review-track { grid-auto-columns: minmax(280px, 86%); }
+  .review-card { min-height: 330px; padding: 24px; }
+  .review-card blockquote { font-size: 1.2rem; }
+  .insurance-card-head { min-height: 0; padding: 25px; }
+  .insurance-card-body { padding: 25px; }
+  .carrier-grid li { padding: 12px 9px; font-size: 1.08rem; }
+  .education-grid { grid-template-columns: 1fr; }
   .service-card, .service-card:nth-child(4):nth-last-child(2), .service-card:nth-child(5):last-child { grid-column: auto; min-height: 205px; padding: 24px; }
   .doctor-card { display: grid; grid-template-columns: .8fr 1fr; min-height: 245px; }
   .doctor-card img { height: 100%; min-height: 245px; }

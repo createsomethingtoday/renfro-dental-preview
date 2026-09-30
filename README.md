@@ -19,6 +19,8 @@ Open `http://localhost:4173/`. The build uses only Node's standard library; it d
 - 18 static routes with responsive desktop and mobile navigation.
 - Five service-category overviews and three representative treatment pages. Other treatment details link to Renfro's official site.
 - Dentist profiles, first-visit information, wellness-plan summary, and contact/location.
+- The homepage covers the original site's core areas: introduction, dentists, services, patient reviews, insurance carriers and wellness benefits, questions/contact, and three dental education videos. Reviews are an attributed September 2026 snapshot; coverage should be confirmed with the practice.
+- Review cards can be scrolled by touch, trackpad, or the arrow controls. Education videos open in a dialog and retain direct YouTube links when scripting is unavailable.
 - Appointment actions open Renfro's existing Apex scheduling portal. Payment actions open Renfro's official payment page. This concept has no forms, patient data handling, or payment processing.
 - A [coverage page](/coverage/) identifies what is inside this focused preview. All pages include an independent-concept disclosure and `noindex` metadata.
 

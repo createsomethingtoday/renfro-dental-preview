@@ -8,3 +8,6 @@ Current Renfro Family Dental site assets used with the permission expressly conf
 - `public/assets/office.jpg` — https://www.renfrodental.com/wp-content/uploads/sites/14/2024/04/burleson-tx-dental-office.jpg
 - `public/assets/dr-jarrett-stone.jpg` — https://www.renfrodental.com/wp-content/uploads/sites/14/2024/07/dr-jarrett-stone-burleson-tx-1.jpg
 - `public/assets/dr-ryker-ferraro.jpg` — https://www.renfrodental.com/wp-content/uploads/sites/14/2024/07/dr-ryker-ferraro-burleson-tx-1.jpg
+- `public/assets/education-video-01.jpg` — https://www.renfrodental.com/wp-content/uploads/sites/14/2024/04/burleson-tx-dentist-education-video-01.jpg
+- `public/assets/education-video-02.jpg` — https://www.renfrodental.com/wp-content/uploads/sites/14/2024/04/burleson-tx-dentist-education-video-02.jpg
+- `public/assets/education-video-03.jpg` — https://www.renfrodental.com/wp-content/uploads/sites/14/2024/04/burleson-tx-dentist-education-video-03.jpg
