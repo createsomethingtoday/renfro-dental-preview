@@ -269,5 +269,11 @@ for (const { path, html } of pages) {
   await mkdir(folder, { recursive: true });
   await writeFile(join(folder, 'index.html'), html);
 }
+const notFound = page({
+  path: '/404/', title: 'Page not found', description: 'This page is not part of the Renfro Family Dental concept preview.',
+  body: `${titleBlock('Page not found', 'Let’s find your way back.', 'This focused concept does not include every page on Renfro’s official website.')}
+    <section class="shell section-tight"><div class="hero-actions">${link('/', 'Return to the concept home', 'button button-primary')}${link(official, 'Visit Renfro’s official site <span aria-hidden="true">↗</span>', 'button button-outline')}</div></section>`,
+});
+await writeFile(join(dist, '404.html'), notFound.html);
 await writeFile(join(dist, 'route-manifest.json'), JSON.stringify(localRoutes, null, 2));
 console.log(`Built ${pages.length} routes in ${dist}`);

@@ -5,6 +5,10 @@ const root = new URL('../', import.meta.url).pathname;
 const dist = join(root, 'dist');
 const routes = JSON.parse(await readFile(join(dist, 'route-manifest.json'), 'utf8'));
 const failures = [];
+const notFound = await readFile(join(dist, '404.html'), 'utf8');
+if (!notFound.includes('Page not found') || !notFound.includes('Return to the concept home')) {
+  failures.push('404.html: missing intentional not-found experience');
+}
 
 for (const route of routes) {
   const file = join(dist, route, 'index.html');
